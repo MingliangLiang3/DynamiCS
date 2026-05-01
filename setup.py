@@ -14,23 +14,22 @@ exec(open('src/open_clip/version.py').read())
 setup(
     name='open_clip_torch',
     version=__version__,
-    description='OpenCLIP',
+    description='DynamiCS (built on OpenCLIP)',
     long_description=long_description,
     long_description_content_type='text/markdown',
-    url='https://github.com/mlfoundations/open_clip',
-    author='',
-    author_email='',
+    url='https://github.com/MingliangLiang3/DynamiCS',
+    author='Mingliang Liang',
+    author_email='mliang@cs.ru.nl',
     classifiers=[
         # How mature is this project? Common values are
         #   3 - Alpha
         #   4 - Beta
         #   5 - Production/Stable
-        'Development Status :: 3 - Alpha',
+        'Development Status :: 4 - Beta',
         'Intended Audience :: Education',
         'Intended Audience :: Science/Research',
-        'License :: OSI Approved :: Apache Software License',
-        'Programming Language :: Python :: 3.7',
-        'Programming Language :: Python :: 3.8',
+        'License :: OSI Approved :: MIT License',
+                'Programming Language :: Python :: 3.8',
         'Programming Language :: Python :: 3.9',
         'Programming Language :: Python :: 3.10',
         'Topic :: Scientific/Engineering',
@@ -41,7 +40,7 @@ setup(
     ],
 
     # Note that this is a string of words separated by whitespace, not a list.
-    keywords='CLIP pretrained',
+    keywords='CLIP pretrained dynamics openclip',
     package_dir={'': 'src'},
     packages=find_packages(where='src', exclude=['training']),
     include_package_data=True,
@@ -52,5 +51,5 @@ setup(
         'regex',
         'tqdm',
     ],
-    python_requires='>=3.7',
+    python_requires='>=3.8',
 )

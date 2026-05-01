@@ -1,0 +1,7 @@
+{
+  "wag": {
+    "path": "../data/Let-It-Wag-images",
+    "type": "imagefolder",
+    "test": "val"
+  }
+}

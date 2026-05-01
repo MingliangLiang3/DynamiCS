@@ -1,0 +1,138 @@
+{
+  "food101": {
+    "path": "../data/classification/food101",
+    "type": "imagefolder",
+    "train": "train",
+    "test": "test"
+  },
+  "cifar10": {
+    "path": "../data/classification/cifar10",
+    "type": "special"
+  },
+  "cifar100": {
+    "path": "../data/classification/cifar100",
+    "type": "special"
+  },
+  "cub200": {
+    "path": "../data/classification/cub200",
+    "type": "imagefolder",
+    "train": "train",
+    "test": "val"
+  },
+  "sun397": {
+    "path": "../data/classification/sun397",
+    "type": "filelist",
+    "train": "train",
+    "test": "test"
+  },
+  "cars": {
+    "path": "../data/classification/cars/stanford_cars",
+    "type": "imagefolder",
+    "train": "train",
+    "test": "test"
+  },
+  "aircraft": {
+    "path": "../data/classification/aircraft",
+    "type": "imagefolder",
+    "train": "train",
+    "test": "test"
+  },
+  "dtd": {
+    "path": "../data/classification/dtd",
+    "type": "imagefolder",
+    "train": "train",
+    "test": "test"
+  },
+  "pets": {
+    "path": "../data/classification/pets",
+    "type": "imagefolder",
+    "train": "train",
+    "test": "test"
+  },
+  "caltech101": {
+    "path": "../data/classification/caltech101/",
+    "type": "imagefolder",
+    "train": "train",
+    "test": "test"
+  },
+  "kinetics700_frames": {
+    "path": "../data/classification/kinetics700",
+    "type": "imagefolder",
+    "train": "train_images",
+    "test": "val_images"
+  },
+  "flowers": {
+    "path": "../data/classification/flowers",
+    "type": "imagefolder",
+    "train": "train",
+    "test": "test"
+  },
+  "mnist": {
+    "path": "../data/classification/mnist",
+    "type": "special"
+  },
+  "stl10": {
+    "path": "../data/classification/stl10",
+    "type": "special"
+  },
+  "eurosat": {
+    "path": "../data/classification/eurosat",
+    "type": "imagefolder",
+    "train": "train",
+    "test": "val"
+  },
+  "resisc45": {
+    "path": "../data/classification/resisc45",
+    "type": "imagefolder",
+    "train": "train",
+    "test": "test"
+  },
+  "gtsrb": {
+    "path": "../data/classification/gtsrb",
+    "type": "imagefolder",
+    "train": "train",
+    "test": "test"
+  },
+  "kitti_distance": {
+    "path": "../data/classification/kitti",
+    "type": "imagefolder",
+    "train": "train",
+    "test": "val"
+  },
+  "country211": {
+    "path": "../data/classification/country211",
+    "type": "imagefolder",
+    "train": "train",
+    "test": "test"
+  },
+  "patch_camelyon": {
+    "path": "../data/classification/patch_camelyon",
+    "type": "imagefolder",
+    "train": "train",
+    "test": "val"
+  },
+  "ucf101_frames": {
+    "path": "../data/classification/ucf101",
+    "type": "imagefolder",
+    "train": "train",
+    "test": "val"
+  },
+  "clevr_counts": {
+    "path": "../data/classification/clevr",
+    "type": "filelist",
+    "train": "train",
+    "test": "val"
+  },
+  "rendered_sst2": {
+    "path": "../data/classification/sst2",
+    "type": "imagefolder",
+    "train": "train",
+    "test": "test"
+  },
+  "hateful_memes": {
+    "path": "../data/classification/HatefulMemes",
+    "type": "imagefolder",
+    "train": "train",
+    "test": "dev"
+  }
+}
