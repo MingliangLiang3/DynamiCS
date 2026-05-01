@@ -99,7 +99,7 @@ If you use DynamiCS in your research, please cite the paper:
 ```bibtex
 @article{liang2026dynamics,
   title={Dynamic Cluster Data Sampling for Efficient and Long-Tail-Aware Vision-Language Pre-training},
-  author={Liang, Mingliang and Liu, Zhuoran and de Vries, Arjen P. and Larson, Martha},
+  author={Mingliang Liang and Zhuoran Liu and Arjen P. de Vries and Martha Larson},
   journal={arXiv preprint arXiv:2604.27932},
   year={2026}
 }
