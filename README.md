@@ -96,6 +96,18 @@ This repository is released under the [MIT License](LICENSE).
 
 ## Citation
 
+If you use DynamiCS in your research, please cite the paper:
+
+```bibtex
+@article{liang2026dynamics,
+  title={Dynamic Cluster Data Sampling for Efficient and Long-Tail-Aware Vision-Language Pre-training},
+  author={Liang, Mingliang and Liu, Zhuoran and de Vries, Arjen P. and Larson, Martha},
+  journal={arXiv preprint arXiv:2604.27932},
+  year={2026}
+}
+```
+
+The repository metadata is also available in [`CITATION.cff`](CITATION.cff).
 
 
 ## Contact

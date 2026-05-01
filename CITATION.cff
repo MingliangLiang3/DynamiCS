@@ -1,5 +1,5 @@
 cff-version: 1.2.0
-message: If you use DynamiCS, please cite the software metadata below. The paper citation will be added once the arXiv preprint is public.
+message: If you use DynamiCS, please cite the paper below. The software metadata is also provided here for reference.
 title: DynamiCS
 type: software
 authors:
@@ -10,3 +10,18 @@ repository-code: https://github.com/MingliangLiang3/DynamiCS
 url: https://github.com/MingliangLiang3/DynamiCS
 license: MIT
 abstract: Dynamic cluster data sampling for efficient and long-tail-aware vision-language pre-training, built on OpenCLIP.
+preferred-citation:
+  type: article
+  title: Dynamic Cluster Data Sampling for Efficient and Long-Tail-Aware Vision-Language Pre-training
+  authors:
+    - family-names: Liang
+      given-names: Mingliang
+    - family-names: Liu
+      given-names: Zhuoran
+    - family-names: de Vries
+      given-names: Arjen P.
+    - family-names: Larson
+      given-names: Martha
+  journal: arXiv preprint arXiv:2604.27932
+  year: 2026
+  url: https://arxiv.org/abs/2604.27932
