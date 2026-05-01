@@ -167,5 +167,5 @@ torchrun --nproc_per_node=4 -m open_clip_train.main \
 
 For cluster training on Slurm, see the provided scripts:
 
-- [`clip_run_experiment_train_vit_datacomp_dfn200m_node.sh`](../../clip_run_experiment_train_vit_datacomp_dfn200m_node.sh)
-- [`clip_run_experiment_fine_tune_vit_datacomp_dfn200m_array.sh`](../../clip_run_experiment_fine_tune_vit_datacomp_dfn200m_array.sh)
+- [`scripts/dynamics_b16_pretrain.sh`](../../scripts/dynamics_b16_pretrain.sh)
+- [`scripts/dynamics_b16_finetune.sh`](../../scripts/dynamics_b16_finetune.sh)
