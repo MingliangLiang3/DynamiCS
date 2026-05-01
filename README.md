@@ -17,9 +17,7 @@ Zero-shot top-1 classification on ImageNet-1K and *Let It Wag!* with full-traini
 | OpenAI-WIT | `--- (400M)` | `12.8B@224` | 274 | 68.3 | 37.9 | 10700 |
 | MetaCLIP-400M | `--- (400M)` | `12.8B@224` | 274 | 70.8 | 46.5 | `~10700` |
 | OpenCLIP | `LAION-400M (400M)` | `12.8B@224` | 274 | 67.1 | 39.1 | 10736 |
-| LaCLIP | `LAION-400M (400M)` | `12.8B@224` | 274 | 69.4 | 48.4 | `~10700` |
 | DynamiCS (Ours) | `LAION-400M (298M)` | `2.56B@112 + 128M@224` | 81 | 67.5 | 45.5 | 299 |
-| OpenVision | `Recap-DataComp-1B (1.4B)` | `12.8B@160 + 1.024B@224 + 256M@336` | 180 | 73.9 | `---` | `---` |
 | DynamiCS (Ours) [[ckpt]](https://huggingface.co/MingliangLiang3/DynamiCS-ViT-B-16-DataComp-DFN) | `DataComp-DFN (130M)` | `1.28B@112 + 128M@224` | 81 | 71.3 | 50.2 | 163 |
 | DynamiCS (Ours) [[ckpt]](https://huggingface.co/MingliangLiang3/DynamiCS-ViT-B-16-DataComp-DFN) | `DataComp-DFN (130M)` | `2.56B@112 + 128M@224` | 81 | 72.6 | 52.0 | 299 |
 
