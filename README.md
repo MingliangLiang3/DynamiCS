@@ -84,7 +84,7 @@ We use [CLIP Benchmark](https://github.com/LAION-AI/CLIP_benchmark) to evaluate 
 
 DynamiCS is implemented on top of [OpenCLIP](https://github.com/mlfoundations/open_clip). Please also cite and acknowledge the OpenCLIP project if you use this repository in your work.
 
-This work used the Dutch national e-infrastructure with the support of the SURF Cooperative using grant no. `EINF-17261`. The computations were carried out on the Snellius supercomputer.
+This work used the Dutch national e-infrastructure with the support of the SURF Cooperative. The computations were carried out on the Snellius supercomputer.
 
 ## License
 
