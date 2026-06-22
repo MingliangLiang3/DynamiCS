@@ -143,7 +143,6 @@ gpu1sync.sh
 src/sbatch
 src/misc
 .vscode
-.codex
 src/debug
 core.*
 
