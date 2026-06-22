@@ -3,7 +3,6 @@ wandb/
 models/
 features/
 results/
-.codex
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
@@ -144,6 +143,7 @@ gpu1sync.sh
 src/sbatch
 src/misc
 .vscode
+.codex
 src/debug
 core.*
 
