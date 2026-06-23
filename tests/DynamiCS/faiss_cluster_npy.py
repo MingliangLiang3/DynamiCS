@@ -18,6 +18,10 @@ def parse_args():
                         help="Number of k-means iterations (default: 10)")
     parser.add_argument("--per-file", type=int, default=250000,
                         help="Max samples to draw per embedding file (default: 250000)")
+    parser.add_argument("--max-train", type=int, default=0,
+                        help="Global cap on training samples (0 = no cap). "
+                             "K-means needs no more than ~256*K points; for K=50000 "
+                             "that is ~12.8M. More than this just wastes I/O and RAM.")
     parser.add_argument("--dim", type=int, default=768,
                         help="Embedding dimension (default: 768 for DINOv2-base)")
     return parser.parse_args()
@@ -27,21 +31,36 @@ def main():
     args = parse_args()
 
     files = sorted(glob(f"{args.input}/*.npy"))
-    total_samples = len(files) * args.per_file
+
+    # Spread the global budget evenly across files so the sample is
+    # representative of the whole corpus, not just the first few files.
+    per_file = args.per_file
+    if args.max_train > 0:
+        per_file = min(per_file, max(1, args.max_train // len(files)))
+
+    total_samples = len(files) * per_file
+    if args.max_train > 0:
+        total_samples = min(total_samples, args.max_train)
     train = np.empty((total_samples, args.dim), dtype='float32')
 
     ptr = 0
     for fn in tqdm(files, desc="Loading embeddings"):
-        x = np.load(fn)
+        if ptr >= total_samples:
+            break
+        # Memory-map so we never read the whole (multi-GB) file into RAM;
+        # only the sampled rows are actually pulled from disk.
+        x = np.load(fn, mmap_mode='r')
         n = len(x)
-        take = min(args.per_file, n)
+        take = min(per_file, n, total_samples - ptr)
         if take < n:
             idx = np.random.choice(n, take, replace=False)
-            x_sample = x[idx]
+            idx.sort()  # sorted indices -> sequential-ish reads, much faster on GPFS
+            x_sample = np.asarray(x[idx], dtype='float32')
         else:
-            x_sample = x[:take]
-        train[ptr:ptr + take] = x_sample.astype('float32')
+            x_sample = np.asarray(x[:take], dtype='float32')
+        train[ptr:ptr + take] = x_sample
         ptr += take
+        del x  # release the mmap before opening the next file
 
     train = train[:ptr]
     print("Final train shape:", train.shape)

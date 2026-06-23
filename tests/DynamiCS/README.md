@@ -36,7 +36,8 @@ python tests/DynamiCS/faiss_cluster_npy.py \
   --output /path/to/faiss_50k.index \
   --clusters 50000 \
   --niter 10 \
-  --dim 768
+  --dim 768 \
+  --max-train 12800000      # ~256*K; caps RAM at ~39 GB
 ```
 
 ## 3. Refine Redundant Cluster Centers
