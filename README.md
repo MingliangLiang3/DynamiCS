@@ -2,6 +2,8 @@
 
 DynamiCS is an efficient and long-tail-aware data sampling method for vision-language model (VLM) pre-training. This repository contains the code used to build dynamic cluster-based sampling probabilities and to plug them into an OpenCLIP-style training pipeline.
 
+
+> **📢 News:** Our paper *"Dynamic Cluster Data Sampling for Efficient and Long-Tail-Aware Vision-Language Pre-training"* has been accepted to **ECCV 2026**! 🎉
 [![Paper](https://img.shields.io/badge/Paper-arXiv-b31b1b?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2604.27932)
 [![Hugging Face](https://img.shields.io/badge/Hugging%20Face-Checkpoint-ffd21e?logo=huggingface&logoColor=black)](https://huggingface.co/MingliangLiang3/DynamiCS-ViT-B-16-DataComp-DFN)
 
